@@ -1,0 +1,11 @@
+
+# Ignore all CSVs except the main ADR dataset
+*.csv
+!adr_prices_and_vol.csv
+
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+.env
+outputs/
+
