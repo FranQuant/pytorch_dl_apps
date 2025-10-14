@@ -107,4 +107,3 @@ jupyter lab
 
 This repository is for **educational and research purposes only**.
 Not affiliated with O’Reilly Media or The Python Quants GmbH.
-All code © Francisco Salazar unless otherwise noted.
