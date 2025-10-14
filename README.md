@@ -1,18 +1,18 @@
-# Deep Learning Basics with PyTorch — Quant Edition
+# Deep Learning Basics with PyTorch 
 
 ### Based on the *upcoming* book by **Yves Hilpisch, Ph.D. — “Deep Learning with PyTorch” (O’Reilly, forthcoming)**
 
 ---
 
-## 📘 Overview
+## Overview
 
-This repository reproduces and extends exercises from the **pre-release draft** of *“Deep Learning with PyTorch”* by **Dr. Yves Hilpisch** (O’Reilly, forthcoming), re-implemented with **real ADR market data** instead of toy datasets.
+This repository reproduces and extends exercises from the **pre-release draft** of *“Deep Learning with PyTorch”* by **Dr. Yves Hilpisch** (O’Reilly, forthcoming), applying the same workflows to real ADR market data to explore practical financial use cases.
 
 Each notebook mirrors a **chapter** from the book and demonstrates how classical ML foundations evolve into deep learning within a **quantitative finance** context.
 
 ---
 
-## 🎯 Objective
+## Objective
 
 The purpose of this project is to:
 
@@ -22,7 +22,7 @@ The purpose of this project is to:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 | Notebook          | Chapter                    | Focus                                                    |
 | ----------------- | -------------------------- | -------------------------------------------------------- |
@@ -34,7 +34,7 @@ The purpose of this project is to:
 
 ---
 
-## 💼 Dataset
+## Dataset
 
 All examples use **ADR (American Depositary Receipt)** data — for instance, ticker `CIB` — with engineered financial features:
 
@@ -47,7 +47,7 @@ These datasets replace synthetic ones such as `make_moons` or `iris`to create **
 
 ---
 
-## 🧰 Environment Setup
+## Environment Setup
 
 ### Create environment
 
@@ -73,7 +73,7 @@ jupyter lab
 
 ---
 
-## ✍️ Citation and Attribution
+## Citation and Attribution
 
 > *This repository reproduces and extends materials from the pre-release manuscript of*
 > **Hilpisch, Y. (2025, forthcoming). Deep Learning with PyTorch. O’Reilly Media.**
@@ -84,7 +84,7 @@ jupyter lab
 
 ---
 
-## 📊 Current Progress
+## Current Progress
 
 * [x] Chapter 1 – NumPy Foundations
 * [x] Chapter 2 – Linear & Ridge Regression (ADR returns)
@@ -94,7 +94,7 @@ jupyter lab
 
 ---
 
-## 🧩 Next Steps
+## Next Steps
 
 * Integrate **PyTorch models** for regression and classification
 * Compare **classical vs deep learning** approaches on financial data
@@ -103,22 +103,8 @@ jupyter lab
 
 ---
 
-## 📄 License
+## License
 
 This repository is for **educational and research purposes only**.
 Not affiliated with O’Reilly Media or The Python Quants GmbH.
 All code © Francisco Salazar unless otherwise noted.
-
----
-
-### ✅ Recommended commit command
-
-```bash
-git add README.md
-git commit -m "docs: refine README with pre-release attribution and quant-context structure"
-git push origin main
-```
-
----
-
-Would you like me to save this as a ready-to-commit file (`README_refined.md`) so you can preview the diff before overwriting your current one?
