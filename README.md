@@ -16,7 +16,7 @@ Each notebook mirrors a **chapter** from the book and demonstrates how classical
 
 The purpose of this project is to:
 
-* Translate *Hilpisch’s* pedagogical examples into **real-world financial data experiments**.
+* Translate * Dr. Y. Hilpisch’s* pedagogical examples into **real-world financial data experiments**.
 * Bridge the gap between **classical machine-learning intuition** and **deep-learning implementation** in quant research.
 * Provide a transparent, reproducible workflow for ADR-based financial modeling.
 
