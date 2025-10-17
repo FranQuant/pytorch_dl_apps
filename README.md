@@ -34,10 +34,7 @@ Each notebook builds progressively—from core NumPy and scikit-learn workflows 
 ---
 
 > **Note:**  
-> In addition to standard sample datasets referenced in the book (e.g., `iris`, `make_moons`, `california_housing`),  
-> this repository includes a small supplementary file — `adr_prices_and_vol.csv` — used for exploratory testing  
-> of financial data workflows and to illustrate how PyTorch and scikit-learn models can be applied to  
-> quantitative finance use cases.
+> In addition to standard sample datasets referenced in the book (e.g., `iris`, `make_moons`, `california_housing`), this repository includes a small supplementary file — `adr_prices_and_vol.csv` — used for exploratory testing of financial data workflows and to illustrate how PyTorch and scikit-learn models can be applied to quantitative finance use cases.
 
 ---
 ## Current Progress
@@ -84,7 +81,7 @@ conda activate pytorch_dl
 conda install numpy pandas matplotlib seaborn scikit-learn statsmodels scipy numba jupyterlab notebook ipykernel -y
 ```
 
-* 💡 (PyTorch will be added starting from Chapter 5.)*
+* 💡 *(PyTorch will be added starting from Chapter 5.)*
 
 ### Launch Jupyter
 
