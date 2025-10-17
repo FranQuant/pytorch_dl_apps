@@ -1,0 +1,5 @@
+numpy @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_8cclhhg0x3/croot/numpy_and_numpy_base_1755590859900/work/dist/numpy-2.2.5-cp312-cp312-macosx_11_0_arm64.whl#sha256=f2d995e91fd194392feaa446357eb199182af2d1686c264d5c4b75a0c272253c
+scikit-learn @ file:///opt/miniconda3/conda-bld/scikit-learn_1758620846586/work
+torch==2.8.0
+torchaudio==2.8.0
+torchvision==0.23.0
