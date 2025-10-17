@@ -17,33 +17,48 @@
 
 
 # --- Imports ---
-import numpy as np, pandas as pd, matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import cross_val_score
+from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.datasets import fetch_california_housing
+
+plt.rcParams["figure.dpi"] = 130
+sns.set_theme(style="whitegrid", palette="deep")
 
 # --- Reload base data & engineered features (from notebook 5 logic) ---
 data = fetch_california_housing(as_frame=True)
 df = data.frame.copy()
 df.rename(columns={"MedHouseVal": "target"}, inplace=True)
+
 df["RoomsPerHousehold"] = df["AveRooms"] / df["AveOccup"]
 df["BedroomsPerRoom"]   = df["AveBedrms"] / df["AveRooms"]
 df["PopPerHousehold"]   = df["Population"] / df["AveOccup"]
 
+df["IncomeBucket"] = pd.cut(
+    df["MedInc"],
+    bins=[0, 2, 4, 6, 8, np.inf],
+    labels=["Very Low", "Low", "Mid", "High", "Very High"]
+)
+df = pd.get_dummies(df, columns=["IncomeBucket"], drop_first=True)
+
 X = df.drop("target", axis=1)
 y = df["target"]
 
-scaler = StandardScaler().fit(X)
-X_s = scaler.transform(X)
-ridge = Ridge(alpha=10)
+ridge_pipeline = Pipeline([
+    ("scaler", StandardScaler()),
+    ("model", Ridge(alpha=10)),
+])
 
 # --- Drop-one-feature ablation ---
 scores = []
 for feature in ["RoomsPerHousehold", "BedroomsPerRoom", "PopPerHousehold"]:
-    drop_idx = X.columns.get_loc(feature)
-    X_drop = np.delete(X_s, drop_idx, axis=1)
-    mean_r2 = np.mean(cross_val_score(ridge, X_drop, y, cv=5, scoring="r2"))
+    cols = [col for col in X.columns if col != feature]
+    mean_r2 = cross_val_score(ridge_pipeline, X[cols], y, cv=5, scoring="r2").mean()
     scores.append((feature, mean_r2))
 
 ablation_df = pd.DataFrame(scores, columns=["Dropped Feature", "Mean R2"]).sort_values("Mean R2", ascending=False)
@@ -65,7 +80,6 @@ plt.show()
 
 import torch
 import torch.nn as nn
-import torch.optim as optim
 
 class MLPRegressor(nn.Module):
     def __init__(self, input_dim, hidden_dim=128, dropout=0.3):
