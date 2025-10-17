@@ -6,23 +6,58 @@
 
 ## Overview
 
-This repository reproduces and extends exercises from the **pre-release draft** of *“Deep Learning with PyTorch”* by **Dr. Yves Hilpisch** (O’Reilly, forthcoming), applying the same workflows to real ADR market data to explore practical financial use cases.
+This repository accompanies a self-directed study of the *pre-release draft* of  
+**“Deep Learning with PyTorch”** by **Dr. Yves Hilpisch** (O’Reilly, forthcoming).  
 
-Each notebook mirrors a **chapter** from the book and demonstrates how classical ML foundations evolve into deep learning within a **quantitative finance** context.
+It reproduces and extends selected chapters from the manuscript, linking classical machine-learning foundations to modern deep-learning concepts within a **quantitative-finance** context.  
 
----
-
-## Objective
-
-The purpose of this project is to:
-
-* Translate * Dr. Y. Hilpisch’s* pedagogical examples into **real-world financial data experiments**.
-* Bridge the gap between **classical machine-learning intuition** and **deep-learning implementation** in quant research.
-* Provide a transparent, reproducible workflow for ADR-based financial modeling.
+Each notebook builds progressively—from core NumPy and scikit-learn workflows to PyTorch-based architectures—providing a transparent and reproducible learning path for applied machine learning in finance.
 
 ---
 
 ## Repository Structure
+
+```
+├── part1_foundations
+│   ├── adr_prices_and_vol.csv		# Supporting dataset (finance-oriented)
+│   ├── capstone_california_housing	# Capstone: feature engineering & PyTorch MLP
+│   ├── chapter_1.ipynb 				# NumPy foundations & linear algebra
+│   ├── chapter_2.ipynb				# Linear & Ridge Regression
+│   ├── chapter_3.ipynb				# Classification models (LogReg, SVM, Trees)
+│   ├── chapter_4.ipynb				# Limits of Classical ML — Overfitting, Complexity 
+│   └── exercises_challenges			# Chapter review exercises and challenges 
+├── part2_pytorch_basics
+│   ├── chapter_5.ipynb				# Introduction to Deep Learning with PyTorch
+│   └── exercises_challenges			# Exercises for neural network foundations			
+└── README.md
+```
+---
+
+> **Note:**  
+> In addition to standard sample datasets referenced in the book (e.g., `iris`, `make_moons`, `california_housing`),  
+> this repository includes a small supplementary file — `adr_prices_and_vol.csv` — used for exploratory testing  
+> of financial data workflows and to illustrate how PyTorch and scikit-learn models can be applied to  
+> quantitative finance use cases.
+
+---
+## Current Progress
+
+The project currently covers **Part I (Foundations)** and introduces **Part II (PyTorch Basics)**.  
+Each notebook builds upon the previous one, forming a coherent learning path from classical ML to deep learning.
+
+---
+
+### 📘 Chapter Checklist
+
+* [x] Chapter 1 – NumPy Foundations
+* [x] Chapter 2 – Linear & Ridge Regression 
+* [x] Chapter 3 – Classification & Ensemble Comparison
+* [x] Chapter 4 – Limits of Classical ML (Overfitting & Learning Curves)
+* [x] Chapter 5 – PyTorch Neural Networks
+
+---
+
+### 🧩 Notebook Summary
 
 | Notebook          | Chapter                    | Focus                                                    |
 | ----------------- | -------------------------- | -------------------------------------------------------- |
@@ -30,20 +65,7 @@ The purpose of this project is to:
 | `chapter_2.ipynb` | Classical ML               | Linear, Ridge, and Polynomial Regression                 |
 | `chapter_3.ipynb` | ML Models                  | Logistic Regression, SVM, Decision Trees, Random Forests |
 | `chapter_4.ipynb` | Limits of Classical ML     | Complexity, Overfitting, Learning Curves                 |
-| *(Upcoming)*      | Deep Learning with PyTorch | Feedforward & CNN architectures for financial series     |
-
----
-
-## Dataset
-
-All examples use **ADR (American Depositary Receipt)** data — for instance, ticker `CIB` — with engineered financial features:
-
-* Daily and multi-day returns
-* Rolling volatility
-* Volume and volatility changes
-* Binary targets (`1` = up day, `0` = down day)
-
-These datasets replace synthetic ones such as `make_moons` or `iris`to create **realistic market-modeling challenges**.
+| `chapter_5.ipynb` | Deep Learning with PyTorch | First Steps with PyTorch                                 |
 
 ---
 
@@ -56,18 +78,17 @@ conda create -n pytorch_dl python=3.12 -y
 conda activate pytorch_dl
 ```
 
-### Install dependencies
+### Install core dependencies
 
 ```bash
 conda install numpy pandas matplotlib seaborn scikit-learn statsmodels scipy numba jupyterlab notebook ipykernel -y
 ```
 
-*(PyTorch will be added starting from Chapter 5.)*
+* 💡 (PyTorch will be added starting from Chapter 5.)*
 
 ### Launch Jupyter
 
 ```bash
-conda activate pytorch_dl
 jupyter lab
 ```
 
@@ -77,33 +98,22 @@ jupyter lab
 
 > *This repository reproduces and extends materials from the pre-release manuscript of*
 > **Hilpisch, Y. (2025, forthcoming). Deep Learning with PyTorch. O’Reilly Media.**
-> *Adapted for educational and research purposes in quantitative finance.*
+> *Adapted for educational and research purposes within a quantitative-finance context*
 
-* Original materials © Dr. Yves Hilpisch / The Python Quants GmbH
+* Original content © Dr. Yves Hilpisch / The Python Quants GmbH
 * Adaptations © 2025 Francisco Salazar — Academic, non-commercial use only
-
----
-
-## Current Progress
-
-* [x] Chapter 1 – NumPy Foundations
-* [x] Chapter 2 – Linear & Ridge Regression (ADR returns)
-* [x] Chapter 3 – Classification & Ensemble Comparison
-* [x] Chapter 4 – Limits of Classical ML (Overfitting & Learning Curves)
-* [ ] Chapter 5 – PyTorch Neural Networks (Next phase)
-
----
-
-## Next Steps
-
-* Integrate **PyTorch models** for regression and classification
-* Compare **classical vs deep learning** approaches on financial data
-* Add **regularization**, **dropout**, and **learning-rate schedules**
-* Extend visual diagnostics for generalization and risk metrics
 
 ---
 
 ## License
 
-This repository is for **educational and research purposes only**.
-Not affiliated with O’Reilly Media or The Python Quants GmbH.
+This repository is provided for **educational and research purposes only**.  
+It is **not affiliated with** or endorsed by **O’Reilly Media** or **The Python Quants GmbH**.
+
+All adaptations are shared under a *non-commercial educational use* framework to support open learning in quantitative finance and deep learning.
+
+---
+**Maintained by:** Francisco Salazar  
+*Last updated: October 2025*
+
+
