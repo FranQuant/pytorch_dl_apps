@@ -9,7 +9,7 @@
 This repository accompanies a self-directed study of the *pre-release draft* of  
 **“Deep Learning with PyTorch”** by **Dr. Yves Hilpisch** (O’Reilly, forthcoming).  
 
-It reproduces and extends selected chapters from the manuscript, linking classical machine-learning foundations to modern deep-learning concepts within a **quantitative-finance** context.  
+It reproduces and extends selected chapters from the manuscript, linking classical machine-learning foundations to modern deep-learning concepts.  
 
 Each notebook builds progressively—from core NumPy and scikit-learn workflows to PyTorch-based architectures—providing a transparent and reproducible learning path for applied machine learning in finance.
 
@@ -95,7 +95,6 @@ jupyter lab
 
 > *This repository reproduces and extends materials from the pre-release manuscript of*
 > **Hilpisch, Y. (2025, forthcoming). Deep Learning with PyTorch. O’Reilly Media.**
-> *Adapted for educational and research purposes within a quantitative-finance context*
 
 * Original content © Dr. Yves Hilpisch / The Python Quants GmbH
 * Adaptations © 2025 Francisco Salazar — Academic, non-commercial use only
