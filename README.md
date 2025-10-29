@@ -71,7 +71,7 @@ conda activate pytorch_dl
 ### Install core dependencies
 
 ```bash
-conda install numpy pandas matplotlib seaborn scikit-learn statsmodels scipy numba               jupyterlab notebook ipykernel -y
+conda install numpy pandas matplotlib seaborn scikit-learn statsmodels scipy numba jupyterlab notebook ipykernel -y
 ```
 
 > 💡 **PyTorch** and related libraries are introduced in **Part II (from Chapter 5)**.  
@@ -96,7 +96,7 @@ jupyter lab
 | I | 4 | Overfitting & Complexity Control | ✅ |
 | II | 5 | PyTorch Neural-Network Fundamentals | ✅ |
 | II | 6 | Autograd, Optimisers, Training Loops | ✅ |
-| II | 7 | Training, Neural Networks | ✅ |
+| II | 7 | Training Neural Networks | ✅ |
 | II | 7 | **Exercises & Challenges: Training Tiny Networks** | ✅ (Full) |
 
 ---
