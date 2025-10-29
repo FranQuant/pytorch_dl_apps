@@ -12,8 +12,7 @@
 
 ## Overview
 
-This repository accompanies a **self-directed study and applied implementation** of the pre-release manuscript of  
-**_Deep Learning with PyTorch_** by **Dr. Yves Hilpisch** (O’Reilly, forthcoming).  
+This repository accompanies a **self-directed study and applied implementation** of the pre-release manuscript of **_Deep Learning with PyTorch_** by **Dr. Yves Hilpisch** (O’Reilly, forthcoming).  
 
 It reconstructs and extends the book’s exercises, linking **classical machine-learning foundations** to **modern deep-learning practice** in a fully reproducible environment.  
 Each notebook forms part of a progressive learning path—from **NumPy fundamentals** and **regression models** to **PyTorch-based neural networks**, **optimisation routines**, and **training diagnostics**.
@@ -46,7 +45,7 @@ By following the notebooks, you will:
 ├── part2_pytorch_basics
 │   ├── chapter_5.ipynb              # Introduction to PyTorch
 │   ├── chapter_6.ipynb              # Tensors, Autograd, and Training Loops
-│   ├── chapter_7_exercises.ipynb    # Training Tiny Networks + Challenges
+│   ├── chapter_7.ipynb    			 # Training Tiny Networks 
 │   └── exercises_challenges         # Collected solutions for Part II
 │
 ├── data/
@@ -97,22 +96,8 @@ jupyter lab
 | I | 4 | Overfitting & Complexity Control | ✅ |
 | II | 5 | PyTorch Neural-Network Fundamentals | ✅ |
 | II | 6 | Autograd, Optimisers, Training Loops | ✅ |
+| II | 7 | Training, Neural Networks | ✅ |
 | II | 7 | **Exercises & Challenges: Training Tiny Networks** | ✅ (Full) |
-
----
-
-## Highlights from Chapter 7 – Exercises & Challenges
-
-Implemented training refinements:
-
-- **Activation comparison:** ReLU vs tanh  
-- **Model capacity study:** hidden sizes {4, 8, 32}  
-- **Early stopping:** patience = 5  
-- **Gradient clipping:** `clip_grad_norm_` stabilisation  
-- **Cosine LR scheduling:** dynamic learning-rate decay  
-- **Mini-batch training:** stochastic optimisation with `DataLoader`
-
-Each experiment includes quantitative diagnostics and decision-boundary visualisations.
 
 ---
 
