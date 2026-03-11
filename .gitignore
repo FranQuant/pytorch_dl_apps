@@ -1,12 +1,21 @@
-
-# Ignore all CSVs except the main ADR dataset
-*.csv
-!adr_prices_and_vol.csv
-
-.ipynb_checkpoints/
-__pycache__/
+# macOS
 .DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environment files
 .env
+.venv/
+venv/
+
+# Generated output folders
 outputs/
 
-part2_pytorch_basics/exercises_challenges/*.pt
+# Keep the tracked ADR sample dataset only
+*.csv
+!part1_foundations/adr_prices_and_vol.csv
