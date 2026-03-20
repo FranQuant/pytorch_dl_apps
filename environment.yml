@@ -1,3 +1,4 @@
+# Conda environment intended for running the notebooks in this repository.
 name: pytorch_dl_apps
 channels:
   - defaults
@@ -124,7 +125,6 @@ dependencies:
   - pixman=0.46.4
   - platformdirs=4.5.0
   - prometheus_client=0.24.1
-  - prompt-toolkit=3.0.52
   - prompt_toolkit=3.0.52
   - psutil=7.0.0
   - pthread-stubs=0.3
@@ -163,7 +163,6 @@ dependencies:
   - tk=8.6.15
   - tornado=6.5.4
   - traitlets=5.14.3
-  - typing-extensions=4.15.0
   - typing_extensions=4.15.0
   - tzdata=2026a
   - urllib3=2.6.3
@@ -187,4 +186,3 @@ dependencies:
       - torch==2.10.0
       - torchaudio==2.10.0
       - torchvision==0.25.0
-prefix: /Users/frasagui/Python/envs/pytorch_dl_apps
