@@ -14,6 +14,14 @@ This repository is organized as a progressive study workflow covering:
 
 The repository is educational in purpose and is intended to preserve a clean, reproducible record of chapter work, exercises, and applied extensions.
 
+## How to Use This Repository
+
+The notebooks are intended to be read in sequence:
+
+- work through the chapter notebooks first, from foundations into PyTorch basics and practice
+- use the exercise notebooks alongside their matching chapters for reinforcement
+- treat `part1_foundations/capstone_california_housing` as a staged applied mini-project that brings the earlier material together in a multi-notebook sequence
+
 ## Repository Structure
 
 ```text
@@ -55,7 +63,7 @@ Notebooks focused on tensors, autograd, optimization, and simple neural-network 
 Follow-on notebooks used to consolidate the material through additional implementation work and exercises.
 
 ### Capstone
-The `capstone_california_housing` folder contains a compact applied project covering preprocessing, baseline models, diagnostics, feature engineering, and saved model artifacts.
+The `capstone_california_housing` folder contains a staged California Housing mini-project that progresses from data familiarization and preprocessing through baseline models, diagnostics, feature engineering, MLP experiments, and final stretch-goal extensions.
 
 ## Notes
 
@@ -70,10 +78,9 @@ Pedagogical credit for the original course and book material belongs to Dr. Yves
 
 ## License
 
-Educational and research use only.
+No formal license file is included in this repository. The contents are shared here for educational reference; if you need reuse permissions beyond normal study/reference use, contact the maintainer.
 
 ## Maintainer
 
 Francisco Salazar
-
 
