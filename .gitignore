@@ -19,3 +19,4 @@ outputs/
 # Keep the tracked ADR sample dataset only
 *.csv
 !part1_foundations/adr_prices_and_vol.csv
+part3_practice/exercises_challenges/data/
