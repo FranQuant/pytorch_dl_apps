@@ -66,9 +66,9 @@ and build toward the 4 capstone projects that complete the program.
 | | 6 | Building Blocks of Neural Networks | `part2_pytorch_basics/chapter_6.ipynb` |
 | | 7 | Training Neural Networks | `part2_pytorch_basics/chapter_7.ipynb` |
 | | 8 | Organizing with nn.Module | `part2_pytorch_basics/chapter_8.ipynb` |
-| **III — Supervised Deep Learning in Practice** | 9 | Data Pipelines | `part3_practice/chapter_9.ipynb` |
-| | 10 | Improving Training | `part3_practice/chapter_10.ipynb` |
-| | 11 | Deeper Architectures | `part3_practice/chapter_11.ipynb` |
+| **III — Supervised Deep Learning in Practice** | 9 | Data Pipelines | `part3_practice/ch09_data_pipelines.ipynb` |
+| | 10 | Improving Training | `part3_practice/ch10_improving_training.ipynb` |
+| | 11 | Deeper Architectures | `part3_practice/ch11_deeper_architectures.ipynb` |
 | | 12 | Training at Scale | `part3_practice/ch12_training_at_scale.ipynb` |
 | **IV — Toward Large Language Models** | 13 | Sequences and Language | `part3_practice/ch13_sequences_language.ipynb` |
 | | 14 | RNNs, Attention, and Transformers | `part3_practice/ch14_rnn_attention_transformers.ipynb` |
@@ -125,9 +125,9 @@ pytorch_dl_apps/
 │       └── exercises_ch8_organize_code.ipynb
 │
 ├── part3_practice/                       # Book Parts III & IV — Chs 9–14
-│   ├── chapter_9.ipynb                   # Data pipelines ✅
-│   ├── chapter_10.ipynb                  # Improving training ✅
-│   ├── chapter_11.ipynb                  # Deeper architectures ✅
+│   ├── ch09_data_pipelines.ipynb         # Data pipelines ✅
+│   ├── ch10_improving_training.ipynb     # Improving training ✅
+│   ├── ch11_deeper_architectures.ipynb   # Deeper architectures ✅
 │   ├── ch12_training_at_scale.ipynb      # Training at scale ✅
 │   ├── ch13_sequences_language.ipynb     # Sequences and language ✅
 │   ├── ch14_rnn_attention_transformers.ipynb  # RNNs, attention, transformers ✅
