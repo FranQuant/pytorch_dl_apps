@@ -42,9 +42,13 @@ The notebooks are intended to be read in sequence:
 │   └── exercises_challenges/
 │
 ├── part3_practice
-│   ├── chapter_9.ipynb
-│   ├── chapter_10.ipynb
-│   ├── chapter_11.ipynb
+│   ├── ch09_data_pipelines.ipynb
+│   ├── ch10_improving_training.ipynb
+│   ├── ch11_deeper_architectures.ipynb
+│   ├── ch12_training_at_scale.ipynb
+│   ├── ch13_sequences_language.ipynb
+│   ├── ch14_rnn_attention_transformers.ipynb
+│   ├── ch15_training_large_models.ipynb
 │   └── exercises_challenges/
 │
 ├── environment.yml
@@ -60,7 +64,10 @@ Introductory notebooks covering numerical and machine-learning basics, including
 Notebooks focused on tensors, autograd, optimization, and simple neural-network training workflows.
 
 ### Part III — Practice
-Follow-on notebooks used to consolidate the material through additional implementation work and exercises.
+Notebooks covering supervised deep learning in practice: data pipelines, training improvements, deeper architectures, training at scale, and sequence modeling. Chapter notebooks run through Ch 9–12; exercise notebooks accompany each chapter.
+
+### Part IV — Toward Large Language Models
+Notebooks covering sequences, language modeling, RNNs, attention, and transformer architectures, followed by large-model training techniques. Chapter 15 (Training Large Models) covers distributed data-parallel training, automatic mixed precision, and checkpointing strategies. Exercise notebooks accompany each chapter through Ch 15. Chapters 16–17 not yet started.
 
 ### Capstone
 The `capstone_california_housing` folder contains a staged California Housing mini-project that progresses from data familiarization and preprocessing through baseline models, diagnostics, feature engineering, MLP experiments, and final stretch-goal extensions.
@@ -68,6 +75,7 @@ The `capstone_california_housing` folder contains a staged California Housing mi
 ## Notes
 
 - Saved `.pt` and `.pkl` artifacts are kept in the capstone folder to preserve outputs from the applied workflow.
+- `nbstripout` is installed as a pre-commit hook — all notebook outputs are stripped before commits to keep the history clean and diff-friendly.
 - This repository is a study and implementation record, not a production package.
 
 ## Attribution
